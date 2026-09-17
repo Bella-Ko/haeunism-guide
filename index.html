@@ -8,10 +8,6 @@
   <title>HAEUN-ISM | Guest Guide</title>
 
   <style>
-    /* =========================
-       BASIC
-    ========================== */
-
     * {
       box-sizing: border-box;
       margin: 0;
@@ -28,11 +24,11 @@
         radial-gradient(
           circle at top,
           #ffffff 0%,
-          #faf8f4 38%,
-          #f3eee7 100%
+          #faf8f4 40%,
+          #f2ece4 100%
         );
 
-      color: #34271f;
+      color: #382b23;
 
       font-family:
         -apple-system,
@@ -47,235 +43,521 @@
       -webkit-font-smoothing: antialiased;
     }
 
-
-    /* =========================
-       PAGE
-    ========================== */
-
     .page {
       width: 100%;
       max-width: 620px;
       margin: 0 auto;
-      padding: 54px 24px 38px;
+      padding: 46px 20px 38px;
     }
 
 
     /* =========================
        BRAND
-    ========================== */
+    ========================= */
 
     .brand {
       text-align: center;
-      margin-bottom: 38px;
+      margin-bottom: 27px;
     }
 
     .logo {
       display: block;
-      width: 190px;
-      max-width: 58%;
+      width: 165px;
+      max-width: 55%;
       height: auto;
-      margin: 0 auto 24px;
+      margin: 0 auto 19px;
     }
 
-    .eyebrow {
+    .location {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 10px;
-      letter-spacing: 5px;
-      color: #9a887b;
-      margin-bottom: 10px;
+      font-size: 9px;
+      letter-spacing: 4px;
+      color: #a18e81;
+      margin-bottom: 9px;
     }
 
-    .guide-title {
+    .main-title {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 24px;
+      font-size: 25px;
       font-weight: 400;
-      letter-spacing: 2px;
-      color: #38271e;
+      letter-spacing: 1.5px;
     }
 
-    .line {
-      width: 34px;
+    .brand-line {
+      width: 31px;
       height: 1px;
-      background: #8f7666;
-      margin: 20px auto 0;
+      background: #8d7464;
+      margin: 18px auto 0;
+    }
+
+
+    /* =========================
+       LANGUAGE
+    ========================= */
+
+    .language-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 33px;
+    }
+
+    .language-switch {
+      display: inline-flex;
+      align-items: center;
+      padding: 5px;
+
+      border: 1px solid rgba(87, 64, 49, 0.14);
+      border-radius: 30px;
+
+      background: rgba(255, 255, 255, 0.58);
+
+      box-shadow:
+        0 8px 25px rgba(66, 47, 36, 0.035);
+    }
+
+    .lang-btn {
+      border: 0;
+      background: transparent;
+
+      color: #8c7a6e;
+
+      font-size: 10px;
+
+      padding: 9px 13px;
+
+      border-radius: 22px;
+
+      cursor: pointer;
+
+      transition: 0.2s ease;
+
+      white-space: nowrap;
+    }
+
+    .lang-btn.active {
+      background: #443128;
+      color: #ffffff;
+
+      box-shadow:
+        0 4px 12px rgba(68, 49, 40, 0.12);
     }
 
 
     /* =========================
        WELCOME
-    ========================== */
+    ========================= */
 
     .welcome {
-      text-align: center;
-      margin-bottom: 37px;
+      position: relative;
+      overflow: hidden;
+
+      background: rgba(255, 255, 255, 0.67);
+
+      border: 1px solid rgba(87, 64, 49, 0.13);
+
+      border-radius: 24px;
+
+      padding: 31px 25px;
+
+      margin-bottom: 38px;
+
+      box-shadow:
+        0 18px 45px rgba(65, 46, 35, 0.045);
+    }
+
+    .welcome::after {
+      content: "";
+
+      position: absolute;
+
+      width: 125px;
+      height: 125px;
+
+      border: 1px solid rgba(126, 102, 86, 0.08);
+
+      border-radius: 50%;
+
+      right: -48px;
+      bottom: -55px;
+    }
+
+    .welcome-small {
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: 9px;
+
+      letter-spacing: 3px;
+
+      color: #a08d80;
+
+      margin-bottom: 13px;
     }
 
     .welcome-title {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 17px;
+
+      font-size: 21px;
+
       font-weight: 400;
-      letter-spacing: 0.5px;
-      margin-bottom: 15px;
+
+      line-height: 1.4;
+
+      margin-bottom: 13px;
     }
 
-    .welcome-sub {
-      font-size: 12px;
+    .welcome-text {
+      max-width: 430px;
+
+      font-size: 12.5px;
+
       line-height: 1.8;
-      color: #8c7c71;
-    }
 
+      color: #746359;
 
-    /* =========================
-       LANGUAGE INFORMATION
-    ========================== */
-
-    .intro-card {
-      background: rgba(255, 255, 255, 0.66);
-      border: 1px solid rgba(106, 84, 70, 0.14);
-      border-radius: 22px;
-
-      padding: 8px 25px;
-
-      box-shadow:
-        0 18px 45px rgba(71, 52, 40, 0.045);
-
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-
-      margin-bottom: 36px;
-    }
-
-    .intro-row {
-      padding: 21px 0;
-      border-bottom: 1px solid rgba(106, 84, 70, 0.10);
-    }
-
-    .intro-row:last-child {
-      border-bottom: none;
-    }
-
-    .intro-language {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-
-      margin-bottom: 7px;
-
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-
-      color: #9b887b;
-    }
-
-    .intro-text {
-      font-size: 13px;
-      line-height: 1.75;
-      color: #4c3e35;
       word-break: keep-all;
     }
 
 
     /* =========================
-       LANGUAGE SELECT
-    ========================== */
+       SECTION TITLE
+    ========================= */
 
-    .select {
-      margin-top: 5px;
+    .section-heading {
+      margin: 0 4px 16px;
     }
 
-    .select-label {
-      text-align: center;
-
+    .section-en {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 10px;
-      letter-spacing: 3.5px;
 
-      color: #9b897c;
+      font-size: 9px;
 
-      margin-bottom: 17px;
+      letter-spacing: 3px;
+
+      color: #a18f82;
+
+      margin-bottom: 6px;
     }
 
-    .language-grid {
+    .section-title {
+      font-size: 16px;
+
+      font-weight: 600;
+    }
+
+
+    /* =========================
+       GUIDE MENU
+    ========================= */
+
+    .guide-grid {
       display: grid;
+
       grid-template-columns: 1fr 1fr;
-      gap: 11px;
+
+      gap: 12px;
     }
 
-    .language-button {
-      position: relative;
+    .guide-card {
+      min-height: 132px;
 
-      min-height: 86px;
+      border: 1px solid rgba(87, 64, 49, 0.13);
+
+      background: rgba(255, 255, 255, 0.78);
+
+      border-radius: 20px;
+
+      padding: 18px;
+
+      cursor: pointer;
 
       display: flex;
+
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
 
-      text-decoration: none;
+      justify-content: space-between;
 
-      background: rgba(255, 255, 255, 0.76);
-
-      border: 1px solid rgba(89, 66, 52, 0.16);
-      border-radius: 16px;
+      text-align: left;
 
       color: #382b23;
 
+      font-family: inherit;
+
       transition:
         transform 0.2s ease,
-        background 0.2s ease,
         border-color 0.2s ease,
-        box-shadow 0.2s ease;
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+
+      box-shadow:
+        0 7px 22px rgba(65, 46, 35, 0.025);
     }
 
-    .language-button:hover {
+    .guide-card:hover {
       transform: translateY(-3px);
 
-      background: #3c2b22;
-      border-color: #3c2b22;
+      border-color: rgba(87, 64, 49, 0.28);
+
+      background: rgba(255, 255, 255, 0.94);
+
+      box-shadow:
+        0 14px 30px rgba(65, 46, 35, 0.07);
+    }
+
+
+    /* 눈에 띄는 아이콘 */
+
+    .guide-icon {
+      width: 46px;
+      height: 46px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      font-size: 21px;
+
+      background: #f3ede6;
+
+      border:
+        1px solid rgba(87, 64, 49, 0.10);
+
+      border-radius: 50%;
+
+      margin-bottom: 17px;
+
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    .guide-name {
+      font-size: 13px;
+
+      font-weight: 650;
+
+      margin-bottom: 5px;
+
+      line-height: 1.4;
+
+      word-break: keep-all;
+    }
+
+    .guide-sub {
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 8px;
+
+      letter-spacing: 1.2px;
+
+      color: #a08f84;
+    }
+
+
+    /* =========================
+       STAY INFO
+    ========================= */
+
+    .stay {
+      margin-top: 42px;
+
+      padding: 27px 5px;
+
+      border-top:
+        1px solid rgba(87, 64, 49, 0.13);
+
+      border-bottom:
+        1px solid rgba(87, 64, 49, 0.13);
+    }
+
+    .stay-label {
+      text-align: center;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 9px;
+
+      letter-spacing: 3px;
+
+      color: #a18f82;
+
+      margin-bottom: 21px;
+    }
+
+    .times {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 34px;
+    }
+
+    .time-box {
+      text-align: center;
+
+      min-width: 90px;
+    }
+
+    .time-name {
+      font-size: 9px;
+
+      letter-spacing: 1.3px;
+
+      color: #9a887c;
+
+      margin-bottom: 7px;
+    }
+
+    .time-value {
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 21px;
+    }
+
+    .time-divider {
+      width: 1px;
+
+      height: 42px;
+
+      background:
+        rgba(87, 64, 49, 0.14);
+    }
+
+
+    /* =========================
+       INSTAGRAM
+    ========================= */
+
+    .instagram {
+      margin-top: 43px;
+
+      padding: 32px 23px;
+
+      text-align: center;
+
+      border-radius: 23px;
+
+      background:
+        rgba(255, 255, 255, 0.65);
+
+      border:
+        1px solid rgba(87, 64, 49, 0.12);
+
+      box-shadow:
+        0 12px 32px rgba(65, 46, 35, 0.035);
+    }
+
+    .insta-small {
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 9px;
+
+      letter-spacing: 3px;
+
+      color: #a18f82;
+
+      margin-bottom: 13px;
+    }
+
+    .insta-icon {
+      width: 42px;
+      height: 42px;
+
+      margin: 0 auto 14px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background: #f3ede6;
+
+      font-size: 18px;
+    }
+
+    .insta-handle {
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 20px;
+
+      margin-bottom: 12px;
+    }
+
+    .insta-text {
+      font-size: 12px;
+
+      line-height: 1.75;
+
+      color: #817067;
+
+      margin-bottom: 20px;
+    }
+
+    .insta-button {
+      display: inline-block;
+
+      text-decoration: none;
 
       color: #ffffff;
 
-      box-shadow:
-        0 12px 25px rgba(62, 43, 32, 0.12);
+      background: #443128;
+
+      padding: 13px 25px;
+
+      border-radius: 30px;
+
+      font-size: 11px;
+
+      letter-spacing: 0.6px;
+
+      transition: 0.2s ease;
     }
 
-    .language-main {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
+    .insta-button:hover {
+      transform: translateY(-2px);
 
-    .language-small {
-      font-size: 9px;
-      letter-spacing: 1.6px;
-      opacity: 0.55;
-    }
-
-    .arrow {
-      position: absolute;
-      right: 13px;
-      bottom: 10px;
-
-      font-size: 12px;
-      opacity: 0.32;
+      background: #33231c;
     }
 
 
     /* =========================
        FOOTER
-    ========================== */
+    ========================= */
 
     footer {
       text-align: center;
-      margin-top: 47px;
-      padding-bottom: 10px;
+
+      padding-top: 43px;
     }
 
     .footer-brand {
-      font-family: Georgia, "Times New Roman", serif;
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
 
       font-size: 10px;
+
       letter-spacing: 3px;
 
       color: #806e62;
@@ -284,67 +566,70 @@
     }
 
     .footer-location {
-      font-size: 9px;
+      font-size: 8px;
+
       letter-spacing: 1.8px;
-      color: #b2a59c;
+
+      color: #b1a49b;
     }
 
 
     /* =========================
        MOBILE
-    ========================== */
+    ========================= */
 
-    @media (max-width: 480px) {
+    @media (max-width: 420px) {
 
       .page {
         padding:
-          38px
-          18px
-          32px;
-      }
-
-      .brand {
-        margin-bottom: 32px;
+          36px
+          17px
+          31px;
       }
 
       .logo {
-        width: 175px;
-        max-width: 58%;
-        margin-bottom: 21px;
+        width: 150px;
       }
 
-      .guide-title {
-        font-size: 21px;
+      .main-title {
+        font-size: 23px;
       }
 
-      .intro-card {
-        padding: 6px 20px;
-        border-radius: 19px;
+      .lang-btn {
+        padding:
+          8px
+          10px;
+
+        font-size: 9px;
       }
 
-      .intro-row {
-        padding: 18px 0;
+      .welcome {
+        padding:
+          27px
+          21px;
       }
 
-      .intro-text {
+      .welcome-title {
+        font-size: 19px;
+      }
+
+      .guide-card {
+        min-height: 125px;
+
+        padding: 16px;
+      }
+
+      .guide-icon {
+        width: 43px;
+
+        height: 43px;
+
+        font-size: 20px;
+      }
+
+      .guide-name {
         font-size: 12.5px;
       }
-
-      .language-button {
-        min-height: 82px;
-      }
-
-    }
-
-
-    /* VERY SMALL MOBILE */
-
-    @media (max-width: 340px) {
-
-      .language-grid {
-        grid-template-columns: 1fr;
-      }
-
     }
 
   </style>
@@ -353,268 +638,742 @@
 
 <body>
 
-  <main class="page">
+<main class="page">
 
 
-    <!-- =====================
-         LOGO
-    ====================== -->
+  <!-- BRAND -->
 
-    <header class="brand">
+  <header class="brand">
 
-      <img
-        src="haeunism-logo.png"
-        alt="HAEUN-ISM"
-        class="logo"
+    <img
+      src="haeunism-logo.png"
+      alt="HAEUN-ISM"
+      class="logo"
+    >
+
+    <div class="location">
+      HAEUNDAE · BUSAN
+    </div>
+
+    <h1 class="main-title">
+      Guest Guide
+    </h1>
+
+    <div class="brand-line"></div>
+
+  </header>
+
+
+
+  <!-- LANGUAGE -->
+
+  <div class="language-wrap">
+
+    <div class="language-switch">
+
+      <button
+        class="lang-btn active"
+        data-lang="ko"
       >
+        KR
+      </button>
 
-      <div class="eyebrow">
-        HAEUNDAE · BUSAN
+      <button
+        class="lang-btn"
+        data-lang="en"
+      >
+        EN
+      </button>
+
+      <button
+        class="lang-btn"
+        data-lang="zh"
+      >
+        中文
+      </button>
+
+      <button
+        class="lang-btn"
+        data-lang="ja"
+      >
+        日本語
+      </button>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- WELCOME -->
+
+  <section class="welcome">
+
+    <div class="welcome-small">
+      WELCOME
+    </div>
+
+    <h2
+      class="welcome-title"
+      id="welcomeTitle"
+    >
+      Welcome to HAEUN-ISM
+    </h2>
+
+    <p
+      class="welcome-text"
+      id="welcomeText"
+    >
+      해운이즘을 찾아주셔서 감사합니다.<br>
+      편안한 숙박을 위해 필요한 정보를
+      아래에서 확인해 주세요.
+    </p>
+
+  </section>
+
+
+
+  <!-- GUIDE -->
+
+  <section>
+
+    <div class="section-heading">
+
+      <div class="section-en">
+        YOUR STAY
       </div>
 
-      <h1 class="guide-title">
-        Guest Guide
-      </h1>
-
-      <div class="line"></div>
-
-    </header>
-
-
-
-    <!-- =====================
-         WELCOME
-    ====================== -->
-
-    <section class="welcome">
-
-      <div class="welcome-title">
-        Welcome to HAEUN-ISM
+      <div
+        class="section-title"
+        id="guideHeading"
+      >
+        이용 안내
       </div>
 
-      <div class="welcome-sub">
-        A little guide for a comfortable stay.<br>
-        Please select your language below.
-      </div>
-
-    </section>
+    </div>
 
 
 
-    <!-- =====================
-         4 LANGUAGE MESSAGE
-    ====================== -->
-
-    <section class="intro-card">
+    <div class="guide-grid">
 
 
-      <!-- KOREAN -->
+      <!-- RULES -->
 
-      <div class="intro-row">
+      <button class="guide-card">
 
-        <div class="intro-language">
-          🇰🇷 &nbsp;한국어
-        </div>
+        <span class="guide-icon">
+          💛
+        </span>
 
-        <div class="intro-text">
-          해운이즘을 찾아주셔서 감사합니다.<br>
-          편안한 숙박을 위한 안내 페이지입니다.<br>
-          아래에서 언어를 선택해 주세요.
-        </div>
+        <div>
 
-      </div>
-
-
-
-      <!-- ENGLISH -->
-
-      <div class="intro-row">
-
-        <div class="intro-language">
-          🇺🇸 &nbsp;English
-        </div>
-
-        <div class="intro-text">
-          Thank you for choosing HAEUN-ISM.<br>
-          This guide contains helpful information
-          for a comfortable stay.<br>
-          Please select your language below.
-        </div>
-
-      </div>
-
-
-
-      <!-- CHINESE -->
-
-      <div class="intro-row">
-
-        <div class="intro-language">
-          🇨🇳 &nbsp;中文
-        </div>
-
-        <div class="intro-text">
-          感谢您选择 HAEUN-ISM。<br>
-          本页面提供舒适入住期间所需的相关指南。<br>
-          请在下方选择您的语言。
-        </div>
-
-      </div>
-
-
-
-      <!-- JAPANESE -->
-
-      <div class="intro-row">
-
-        <div class="intro-language">
-          🇯🇵 &nbsp;日本語
-        </div>
-
-        <div class="intro-text">
-          HAEUN-ISMをお選びいただき、
-          ありがとうございます。<br>
-          快適にお過ごしいただくための
-          ご案内ページです。<br>
-          下記から言語を選択してください。
-        </div>
-
-      </div>
-
-
-    </section>
-
-
-
-    <!-- =====================
-         LANGUAGE BUTTONS
-    ====================== -->
-
-    <section class="select">
-
-      <div class="select-label">
-        SELECT YOUR LANGUAGE
-      </div>
-
-
-      <div class="language-grid">
-
-
-        <!-- Korean -->
-
-        <a
-          href="ko.html"
-          class="language-button"
-        >
-
-          <div class="language-main">
-            한국어
+          <div
+            class="guide-name"
+            data-key="rules"
+          >
+            숙박 주의사항
           </div>
 
-          <div class="language-small">
-            KOREAN
+          <div class="guide-sub">
+            HOUSE RULES
           </div>
 
-          <span class="arrow">
-            →
-          </span>
+        </div>
 
-        </a>
+      </button>
 
 
 
-        <!-- English -->
+      <!-- WIFI -->
 
-        <a
-          href="en.html"
-          class="language-button"
-        >
+      <button class="guide-card">
 
-          <div class="language-main">
-            English
+        <span class="guide-icon">
+          📶
+        </span>
+
+        <div>
+
+          <div
+            class="guide-name"
+            data-key="wifi"
+          >
+            Wi-Fi
           </div>
 
-          <div class="language-small">
-            ENGLISH
+          <div class="guide-sub">
+            INTERNET
           </div>
 
-          <span class="arrow">
-            →
-          </span>
+        </div>
 
-        </a>
+      </button>
 
 
 
-        <!-- Chinese -->
+      <!-- PARKING -->
 
-        <a
-          href="zh.html"
-          class="language-button"
-        >
+      <button class="guide-card">
 
-          <div class="language-main">
-            中文
+        <span class="guide-icon">
+          🚗
+        </span>
+
+        <div>
+
+          <div
+            class="guide-name"
+            data-key="parking"
+          >
+            주차 안내
           </div>
 
-          <div class="language-small">
-            CHINESE
+          <div class="guide-sub">
+            PARKING
           </div>
 
-          <span class="arrow">
-            →
-          </span>
+        </div>
 
-        </a>
+      </button>
 
 
 
-        <!-- Japanese -->
+      <!-- COFFEE -->
 
-        <a
-          href="ja.html"
-          class="language-button"
-        >
+      <button class="guide-card">
 
-          <div class="language-main">
-            日本語
+        <span class="guide-icon">
+          ☕
+        </span>
+
+        <div>
+
+          <div
+            class="guide-name"
+            data-key="coffee"
+          >
+            커피머신
           </div>
 
-          <div class="language-small">
-            JAPANESE
+          <div class="guide-sub">
+            COFFEE
           </div>
 
-          <span class="arrow">
-            →
-          </span>
+        </div>
 
-        </a>
+      </button>
 
+
+
+      <!-- LAUNDRY -->
+
+      <button class="guide-card">
+
+        <span class="guide-icon">
+          🧺
+        </span>
+
+        <div>
+
+          <div
+            class="guide-name"
+            data-key="laundry"
+          >
+            세탁기 사용
+          </div>
+
+          <div class="guide-sub">
+            LAUNDRY
+          </div>
+
+        </div>
+
+      </button>
+
+
+
+      <!-- WASTE -->
+
+      <button class="guide-card">
+
+        <span class="guide-icon">
+          ♻️
+        </span>
+
+        <div>
+
+          <div
+            class="guide-name"
+            data-key="waste"
+          >
+            쓰레기 & 분리수거
+          </div>
+
+          <div class="guide-sub">
+            WASTE & RECYCLING
+          </div>
+
+        </div>
+
+      </button>
+
+
+
+      <!-- LUGGAGE -->
+
+      <button class="guide-card">
+
+        <span class="guide-icon">
+          🧳
+        </span>
+
+        <div>
+
+          <div
+            class="guide-name"
+            data-key="luggage"
+          >
+            짐 보관
+          </div>
+
+          <div class="guide-sub">
+            LUGGAGE
+          </div>
+
+        </div>
+
+      </button>
+
+
+
+      <!-- TRAVEL -->
+
+      <button class="guide-card">
+
+        <span class="guide-icon">
+          🗺️
+        </span>
+
+        <div>
+
+          <div
+            class="guide-name"
+            data-key="travel"
+          >
+            관광 안내
+          </div>
+
+          <div class="guide-sub">
+            TRAVEL GUIDE
+          </div>
+
+        </div>
+
+      </button>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- STAY INFORMATION -->
+
+  <section class="stay">
+
+    <div class="stay-label">
+      STAY INFORMATION
+    </div>
+
+
+    <div class="times">
+
+
+      <div class="time-box">
+
+        <div class="time-name">
+          CHECK-IN
+        </div>
+
+        <div class="time-value">
+          15:00
+        </div>
 
       </div>
 
-    </section>
+
+      <div class="time-divider"></div>
 
 
+      <div class="time-box">
 
-    <!-- =====================
-         FOOTER
-    ====================== -->
+        <div class="time-name">
+          CHECK-OUT
+        </div>
 
-    <footer>
+        <div class="time-value">
+          11:00
+        </div>
 
-      <div class="footer-brand">
-        HAEUN-ISM
       </div>
 
-      <div class="footer-location">
-        HAEUNDAE · BUSAN · KOREA
-      </div>
 
-    </footer>
+    </div>
+
+  </section>
 
 
-  </main>
+
+  <!-- INSTAGRAM -->
+
+  <section class="instagram">
+
+    <div class="insta-small">
+      FOLLOW HAEUN-ISM
+    </div>
+
+    <div class="insta-icon">
+      ♡
+    </div>
+
+    <div class="insta-handle">
+      @haeun__ism
+    </div>
+
+    <p
+      class="insta-text"
+      id="instaText"
+    >
+      해운이즘의 새로운 소식과<br>
+      공간 이야기를 만나보세요.
+    </p>
+
+
+    <a
+      href="https://www.instagram.com/haeun__ism/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="insta-button"
+      id="instaButton"
+    >
+      Instagram에서 보기 ↗
+    </a>
+
+  </section>
+
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-brand">
+      HAEUN-ISM
+    </div>
+
+    <div class="footer-location">
+      HAEUNDAE · BUSAN · KOREA
+    </div>
+
+  </footer>
+
+
+</main>
+
+
+
+<script>
+
+  const translations = {
+
+    ko: {
+
+      welcomeTitle:
+        "Welcome to HAEUN-ISM",
+
+      welcomeText:
+        "해운이즘을 찾아주셔서 감사합니다.<br>편안한 숙박을 위해 필요한 정보를 아래에서 확인해 주세요.",
+
+      guideHeading:
+        "이용 안내",
+
+      rules:
+        "숙박 주의사항",
+
+      wifi:
+        "Wi-Fi",
+
+      parking:
+        "주차 안내",
+
+      coffee:
+        "커피머신",
+
+      laundry:
+        "세탁기 사용",
+
+      waste:
+        "쓰레기 & 분리수거",
+
+      luggage:
+        "짐 보관",
+
+      travel:
+        "관광 안내",
+
+      instaText:
+        "해운이즘의 새로운 소식과<br>공간 이야기를 만나보세요.",
+
+      instaButton:
+        "Instagram에서 보기 ↗"
+    },
+
+
+    en: {
+
+      welcomeTitle:
+        "Welcome to HAEUN-ISM",
+
+      welcomeText:
+        "Thank you for choosing HAEUN-ISM.<br>Find everything you need for a comfortable stay below.",
+
+      guideHeading:
+        "Guest Information",
+
+      rules:
+        "House Rules",
+
+      wifi:
+        "Wi-Fi",
+
+      parking:
+        "Parking",
+
+      coffee:
+        "Coffee Machine",
+
+      laundry:
+        "Washing Machine",
+
+      waste:
+        "Waste & Recycling",
+
+      luggage:
+        "Luggage Storage",
+
+      travel:
+        "Travel Guide",
+
+      instaText:
+        "Discover more moments and<br>stories from HAEUN-ISM.",
+
+      instaButton:
+        "View Instagram ↗"
+    },
+
+
+    zh: {
+
+      welcomeTitle:
+        "欢迎来到 HAEUN-ISM",
+
+      welcomeText:
+        "感谢您选择 HAEUN-ISM。<br>请在下方查看舒适入住期间所需的相关信息。",
+
+      guideHeading:
+        "入住指南",
+
+      rules:
+        "住宿须知",
+
+      wifi:
+        "Wi-Fi",
+
+      parking:
+        "停车指南",
+
+      coffee:
+        "咖啡机",
+
+      laundry:
+        "洗衣机",
+
+      waste:
+        "垃圾分类",
+
+      luggage:
+        "行李寄存",
+
+      travel:
+        "旅游指南",
+
+      instaText:
+        "关注 HAEUN-ISM，<br>发现更多空间与旅行故事。",
+
+      instaButton:
+        "查看 Instagram ↗"
+    },
+
+
+    ja: {
+
+      welcomeTitle:
+        "HAEUN-ISMへようこそ",
+
+      welcomeText:
+        "HAEUN-ISMをお選びいただきありがとうございます。<br>快適にお過ごしいただくための情報をご確認ください。",
+
+      guideHeading:
+        "ご利用案内",
+
+      rules:
+        "宿泊時の注意事項",
+
+      wifi:
+        "Wi-Fi",
+
+      parking:
+        "駐車場案内",
+
+      coffee:
+        "コーヒーマシン",
+
+      laundry:
+        "洗濯機",
+
+      waste:
+        "ゴミ・分別",
+
+      luggage:
+        "荷物預かり",
+
+      travel:
+        "観光案内",
+
+      instaText:
+        "HAEUN-ISMの最新情報や<br>空間のストーリーをご覧ください。",
+
+      instaButton:
+        "Instagramを見る ↗"
+    }
+
+  };
+
+
+
+  const buttons =
+    document.querySelectorAll(".lang-btn");
+
+
+  function changeLanguage(lang) {
+
+    const t =
+      translations[lang];
+
+
+    document.documentElement.lang =
+      lang;
+
+
+    document.getElementById(
+      "welcomeTitle"
+    ).innerHTML =
+      t.welcomeTitle;
+
+
+    document.getElementById(
+      "welcomeText"
+    ).innerHTML =
+      t.welcomeText;
+
+
+    document.getElementById(
+      "guideHeading"
+    ).textContent =
+      t.guideHeading;
+
+
+    document.getElementById(
+      "instaText"
+    ).innerHTML =
+      t.instaText;
+
+
+    document.getElementById(
+      "instaButton"
+    ).textContent =
+      t.instaButton;
+
+
+    document
+      .querySelectorAll("[data-key]")
+      .forEach(item => {
+
+        const key =
+          item.dataset.key;
+
+        item.textContent =
+          t[key];
+
+      });
+
+
+    buttons.forEach(btn => {
+
+      btn.classList.toggle(
+        "active",
+        btn.dataset.lang === lang
+      );
+
+    });
+
+
+    localStorage.setItem(
+      "haeunism-language",
+      lang
+    );
+
+  }
+
+
+
+  buttons.forEach(button => {
+
+    button.addEventListener(
+      "click",
+      () => {
+
+        changeLanguage(
+          button.dataset.lang
+        );
+
+      }
+    );
+
+  });
+
+
+
+  const savedLanguage =
+    localStorage.getItem(
+      "haeunism-language"
+    );
+
+
+  if (
+    savedLanguage &&
+    translations[savedLanguage]
+  ) {
+
+    changeLanguage(
+      savedLanguage
+    );
+
+  }
+
+</script>
+
 
 </body>
 </html>
