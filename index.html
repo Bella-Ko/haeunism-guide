@@ -21,15 +21,8 @@
     body {
       min-height: 100vh;
       background:
-        radial-gradient(
-          circle at top,
-          #ffffff 0%,
-          #faf8f4 40%,
-          #f2ece4 100%
-        );
-
+        radial-gradient(circle at top, #ffffff 0%, #faf8f4 40%, #f2ece4 100%);
       color: #382b23;
-
       font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -39,7 +32,6 @@
         "Noto Sans SC",
         Arial,
         sans-serif;
-
       -webkit-font-smoothing: antialiased;
     }
 
@@ -50,10 +42,7 @@
       padding: 46px 20px 38px;
     }
 
-
-    /* =========================
-       BRAND
-    ========================= */
+    /* BRAND */
 
     .brand {
       text-align: center;
@@ -90,10 +79,7 @@
       margin: 18px auto 0;
     }
 
-
-    /* =========================
-       LANGUAGE
-    ========================= */
+    /* LANGUAGE */
 
     .language-wrap {
       display: flex;
@@ -105,122 +91,79 @@
       display: inline-flex;
       align-items: center;
       padding: 5px;
-
       border: 1px solid rgba(87, 64, 49, 0.14);
       border-radius: 30px;
-
       background: rgba(255, 255, 255, 0.58);
-
-      box-shadow:
-        0 8px 25px rgba(66, 47, 36, 0.035);
+      box-shadow: 0 8px 25px rgba(66, 47, 36, 0.035);
     }
 
     .lang-btn {
       border: 0;
       background: transparent;
-
       color: #8c7a6e;
-
       font-size: 10px;
-
       padding: 9px 13px;
-
       border-radius: 22px;
-
       cursor: pointer;
-
       transition: 0.2s ease;
-
       white-space: nowrap;
     }
 
     .lang-btn.active {
       background: #443128;
       color: #ffffff;
-
-      box-shadow:
-        0 4px 12px rgba(68, 49, 40, 0.12);
+      box-shadow: 0 4px 12px rgba(68, 49, 40, 0.12);
     }
 
-
-    /* =========================
-       WELCOME
-    ========================= */
+    /* WELCOME */
 
     .welcome {
       position: relative;
       overflow: hidden;
-
       background: rgba(255, 255, 255, 0.67);
-
       border: 1px solid rgba(87, 64, 49, 0.13);
-
       border-radius: 24px;
-
       padding: 31px 25px;
-
       margin-bottom: 38px;
-
-      box-shadow:
-        0 18px 45px rgba(65, 46, 35, 0.045);
+      box-shadow: 0 18px 45px rgba(65, 46, 35, 0.045);
     }
 
     .welcome::after {
       content: "";
-
       position: absolute;
-
       width: 125px;
       height: 125px;
-
       border: 1px solid rgba(126, 102, 86, 0.08);
-
       border-radius: 50%;
-
       right: -48px;
       bottom: -55px;
     }
 
     .welcome-small {
       font-family: Georgia, "Times New Roman", serif;
-
       font-size: 9px;
-
       letter-spacing: 3px;
-
       color: #a08d80;
-
       margin-bottom: 13px;
     }
 
     .welcome-title {
       font-family: Georgia, "Times New Roman", serif;
-
       font-size: 21px;
-
       font-weight: 400;
-
       line-height: 1.4;
-
       margin-bottom: 13px;
     }
 
     .welcome-text {
       max-width: 430px;
-
       font-size: 12.5px;
-
       line-height: 1.8;
-
       color: #746359;
-
       word-break: keep-all;
     }
 
-
-    /* =========================
-       SECTION TITLE
-    ========================= */
+    /* SECTION */
 
     .section-heading {
       margin: 0 4px 16px;
@@ -228,363 +171,258 @@
 
     .section-en {
       font-family: Georgia, "Times New Roman", serif;
-
       font-size: 9px;
-
       letter-spacing: 3px;
-
       color: #a18f82;
-
       margin-bottom: 6px;
     }
 
     .section-title {
       font-size: 16px;
-
       font-weight: 600;
     }
 
-
-    /* =========================
-       GUIDE MENU
-    ========================= */
+    /* GUIDE */
 
     .guide-grid {
       display: grid;
-
       grid-template-columns: 1fr 1fr;
-
       gap: 12px;
     }
 
     .guide-card {
       min-height: 132px;
-
       border: 1px solid rgba(87, 64, 49, 0.13);
-
       background: rgba(255, 255, 255, 0.78);
-
       border-radius: 20px;
-
       padding: 18px;
-
       cursor: pointer;
-
       display: flex;
-
       flex-direction: column;
-
       justify-content: space-between;
-
       text-align: left;
-
       color: #382b23;
-
       font-family: inherit;
-
-      transition:
-        transform 0.2s ease,
-        border-color 0.2s ease,
-        box-shadow 0.2s ease,
-        background 0.2s ease;
-
-      box-shadow:
-        0 7px 22px rgba(65, 46, 35, 0.025);
+      transition: 0.2s ease;
+      box-shadow: 0 7px 22px rgba(65, 46, 35, 0.025);
     }
 
     .guide-card:hover {
       transform: translateY(-3px);
-
       border-color: rgba(87, 64, 49, 0.28);
-
       background: rgba(255, 255, 255, 0.94);
-
-      box-shadow:
-        0 14px 30px rgba(65, 46, 35, 0.07);
+      box-shadow: 0 14px 30px rgba(65, 46, 35, 0.07);
     }
-
-
-    /* 눈에 띄는 아이콘 */
 
     .guide-icon {
       width: 46px;
       height: 46px;
-
       display: flex;
-
       align-items: center;
-
       justify-content: center;
-
       font-size: 21px;
-
       background: #f3ede6;
-
-      border:
-        1px solid rgba(87, 64, 49, 0.10);
-
+      border: 1px solid rgba(87, 64, 49, 0.10);
       border-radius: 50%;
-
       margin-bottom: 17px;
-
-      box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.8);
     }
 
     .guide-name {
       font-size: 13px;
-
       font-weight: 650;
-
       margin-bottom: 5px;
-
       line-height: 1.4;
-
       word-break: keep-all;
     }
 
     .guide-sub {
-      font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 8px;
-
       letter-spacing: 1.2px;
-
       color: #a08f84;
     }
 
-
-    /* =========================
-       STAY INFO
-    ========================= */
+    /* STAY */
 
     .stay {
       margin-top: 42px;
-
       padding: 27px 5px;
-
-      border-top:
-        1px solid rgba(87, 64, 49, 0.13);
-
-      border-bottom:
-        1px solid rgba(87, 64, 49, 0.13);
+      border-top: 1px solid rgba(87, 64, 49, 0.13);
+      border-bottom: 1px solid rgba(87, 64, 49, 0.13);
     }
 
     .stay-label {
       text-align: center;
-
-      font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 9px;
-
       letter-spacing: 3px;
-
       color: #a18f82;
-
       margin-bottom: 21px;
     }
 
     .times {
       display: flex;
-
       align-items: center;
-
       justify-content: center;
-
       gap: 34px;
     }
 
     .time-box {
       text-align: center;
-
       min-width: 90px;
     }
 
     .time-name {
       font-size: 9px;
-
       letter-spacing: 1.3px;
-
       color: #9a887c;
-
       margin-bottom: 7px;
     }
 
     .time-value {
-      font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 21px;
     }
 
     .time-divider {
       width: 1px;
-
       height: 42px;
-
-      background:
-        rgba(87, 64, 49, 0.14);
+      background: rgba(87, 64, 49, 0.14);
     }
 
-
-    /* =========================
-       INSTAGRAM
-    ========================= */
+    /* INSTAGRAM */
 
     .instagram {
       margin-top: 43px;
-
-      padding: 32px 23px;
-
+      padding: 34px 23px;
       text-align: center;
-
       border-radius: 23px;
-
-      background:
-        rgba(255, 255, 255, 0.65);
-
-      border:
-        1px solid rgba(87, 64, 49, 0.12);
-
-      box-shadow:
-        0 12px 32px rgba(65, 46, 35, 0.035);
+      background: rgba(255, 255, 255, 0.68);
+      border: 1px solid rgba(87, 64, 49, 0.12);
+      box-shadow: 0 12px 32px rgba(65, 46, 35, 0.035);
     }
 
     .insta-small {
-      font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 9px;
-
       letter-spacing: 3px;
-
       color: #a18f82;
-
-      margin-bottom: 13px;
+      margin-bottom: 18px;
     }
 
-    .insta-icon {
-      width: 42px;
-      height: 42px;
+    /* Instagram 앱 스타일 아이콘 */
 
-      margin: 0 auto 14px;
+    .instagram-logo {
+      width: 49px;
+      height: 49px;
+      margin: 0 auto 15px;
+      border-radius: 14px;
+
+      background:
+        radial-gradient(
+          circle at 30% 105%,
+          #fdf497 0%,
+          #fdf497 5%,
+          #fd5949 35%,
+          #d6249f 62%,
+          #285AEB 100%
+        );
 
       display: flex;
-
       align-items: center;
-
       justify-content: center;
 
+      box-shadow:
+        0 7px 18px rgba(214, 36, 159, 0.18);
+    }
+
+    .instagram-camera {
+      width: 27px;
+      height: 27px;
+      border: 2.4px solid white;
+      border-radius: 8px;
+      position: relative;
+    }
+
+    .instagram-camera::before {
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      border: 2.2px solid white;
       border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
 
-      background: #f3ede6;
-
-      font-size: 18px;
+    .instagram-camera::after {
+      content: "";
+      position: absolute;
+      width: 3.5px;
+      height: 3.5px;
+      background: white;
+      border-radius: 50%;
+      right: 4px;
+      top: 4px;
     }
 
     .insta-handle {
-      font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 20px;
-
       margin-bottom: 12px;
     }
 
     .insta-text {
       font-size: 12px;
-
       line-height: 1.75;
-
       color: #817067;
-
       margin-bottom: 20px;
     }
 
     .insta-button {
       display: inline-block;
-
       text-decoration: none;
-
       color: #ffffff;
-
       background: #443128;
-
       padding: 13px 25px;
-
       border-radius: 30px;
-
       font-size: 11px;
-
       letter-spacing: 0.6px;
-
       transition: 0.2s ease;
     }
 
     .insta-button:hover {
       transform: translateY(-2px);
-
       background: #33231c;
     }
 
-
-    /* =========================
-       FOOTER
-    ========================= */
+    /* FOOTER */
 
     footer {
       text-align: center;
-
       padding-top: 43px;
     }
 
     .footer-brand {
-      font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 10px;
-
       letter-spacing: 3px;
-
       color: #806e62;
-
       margin-bottom: 8px;
     }
 
     .footer-location {
       font-size: 8px;
-
       letter-spacing: 1.8px;
-
       color: #b1a49b;
     }
 
-
-    /* =========================
-       MOBILE
-    ========================= */
+    /* MOBILE */
 
     @media (max-width: 420px) {
-
       .page {
-        padding:
-          36px
-          17px
-          31px;
+        padding: 36px 17px 31px;
       }
 
       .logo {
@@ -596,17 +434,12 @@
       }
 
       .lang-btn {
-        padding:
-          8px
-          10px;
-
+        padding: 8px 10px;
         font-size: 9px;
       }
 
       .welcome {
-        padding:
-          27px
-          21px;
+        padding: 27px 21px;
       }
 
       .welcome-title {
@@ -615,15 +448,12 @@
 
       .guide-card {
         min-height: 125px;
-
         padding: 16px;
       }
 
       .guide-icon {
         width: 43px;
-
         height: 43px;
-
         font-size: 20px;
       }
 
@@ -631,15 +461,12 @@
         font-size: 12.5px;
       }
     }
-
   </style>
 </head>
-
 
 <body>
 
 <main class="page">
-
 
   <!-- BRAND -->
 
@@ -664,45 +491,31 @@
   </header>
 
 
-
   <!-- LANGUAGE -->
 
   <div class="language-wrap">
 
     <div class="language-switch">
 
-      <button
-        class="lang-btn active"
-        data-lang="ko"
-      >
+      <button class="lang-btn active" data-lang="ko">
         KR
       </button>
 
-      <button
-        class="lang-btn"
-        data-lang="en"
-      >
+      <button class="lang-btn" data-lang="en">
         EN
       </button>
 
-      <button
-        class="lang-btn"
-        data-lang="zh"
-      >
+      <button class="lang-btn" data-lang="zh">
         中文
       </button>
 
-      <button
-        class="lang-btn"
-        data-lang="ja"
-      >
+      <button class="lang-btn" data-lang="ja">
         日本語
       </button>
 
     </div>
 
   </div>
-
 
 
   <!-- WELCOME -->
@@ -713,24 +526,16 @@
       WELCOME
     </div>
 
-    <h2
-      class="welcome-title"
-      id="welcomeTitle"
-    >
+    <h2 class="welcome-title" id="welcomeTitle">
       Welcome to HAEUN-ISM
     </h2>
 
-    <p
-      class="welcome-text"
-      id="welcomeText"
-    >
+    <p class="welcome-text" id="welcomeText">
       해운이즘을 찾아주셔서 감사합니다.<br>
-      편안한 숙박을 위해 필요한 정보를
-      아래에서 확인해 주세요.
+      편안한 숙박을 위해 필요한 정보를 아래에서 확인해 주세요.
     </p>
 
   </section>
-
 
 
   <!-- GUIDE -->
@@ -743,242 +548,124 @@
         YOUR STAY
       </div>
 
-      <div
-        class="section-title"
-        id="guideHeading"
-      >
+      <div class="section-title" id="guideHeading">
         이용 안내
       </div>
 
     </div>
 
 
-
     <div class="guide-grid">
 
-
-      <!-- RULES -->
-
       <button class="guide-card">
-
-        <span class="guide-icon">
-          💛
-        </span>
-
+        <span class="guide-icon">💛</span>
         <div>
-
-          <div
-            class="guide-name"
-            data-key="rules"
-          >
+          <div class="guide-name" data-key="rules">
             숙박 주의사항
           </div>
-
           <div class="guide-sub">
             HOUSE RULES
           </div>
-
         </div>
-
       </button>
 
 
-
-      <!-- WIFI -->
-
       <button class="guide-card">
-
-        <span class="guide-icon">
-          📶
-        </span>
-
+        <span class="guide-icon">📶</span>
         <div>
-
-          <div
-            class="guide-name"
-            data-key="wifi"
-          >
+          <div class="guide-name" data-key="wifi">
             Wi-Fi
           </div>
-
           <div class="guide-sub">
             INTERNET
           </div>
-
         </div>
-
       </button>
 
 
-
-      <!-- PARKING -->
-
       <button class="guide-card">
-
-        <span class="guide-icon">
-          🚗
-        </span>
-
+        <span class="guide-icon">🚗</span>
         <div>
-
-          <div
-            class="guide-name"
-            data-key="parking"
-          >
+          <div class="guide-name" data-key="parking">
             주차 안내
           </div>
-
           <div class="guide-sub">
             PARKING
           </div>
-
         </div>
-
       </button>
 
 
-
-      <!-- COFFEE -->
-
       <button class="guide-card">
-
-        <span class="guide-icon">
-          ☕
-        </span>
-
+        <span class="guide-icon">☕</span>
         <div>
-
-          <div
-            class="guide-name"
-            data-key="coffee"
-          >
+          <div class="guide-name" data-key="coffee">
             커피머신
           </div>
-
           <div class="guide-sub">
             COFFEE
           </div>
-
         </div>
-
       </button>
 
 
-
-      <!-- LAUNDRY -->
-
       <button class="guide-card">
-
-        <span class="guide-icon">
-          🧺
-        </span>
-
+        <span class="guide-icon">🧺</span>
         <div>
-
-          <div
-            class="guide-name"
-            data-key="laundry"
-          >
+          <div class="guide-name" data-key="laundry">
             세탁기 사용
           </div>
-
           <div class="guide-sub">
             LAUNDRY
           </div>
-
         </div>
-
       </button>
 
 
-
-      <!-- WASTE -->
-
       <button class="guide-card">
-
-        <span class="guide-icon">
-          ♻️
-        </span>
-
+        <span class="guide-icon">♻️</span>
         <div>
-
-          <div
-            class="guide-name"
-            data-key="waste"
-          >
+          <div class="guide-name" data-key="waste">
             쓰레기 & 분리수거
           </div>
-
           <div class="guide-sub">
             WASTE & RECYCLING
           </div>
-
         </div>
-
       </button>
 
 
-
-      <!-- LUGGAGE -->
-
       <button class="guide-card">
-
-        <span class="guide-icon">
-          🧳
-        </span>
-
+        <span class="guide-icon">🧳</span>
         <div>
-
-          <div
-            class="guide-name"
-            data-key="luggage"
-          >
+          <div class="guide-name" data-key="luggage">
             짐 보관
           </div>
-
           <div class="guide-sub">
             LUGGAGE
           </div>
-
         </div>
-
       </button>
 
 
-
-      <!-- TRAVEL -->
-
       <button class="guide-card">
-
-        <span class="guide-icon">
-          🗺️
-        </span>
-
+        <span class="guide-icon">🗺️</span>
         <div>
-
-          <div
-            class="guide-name"
-            data-key="travel"
-          >
+          <div class="guide-name" data-key="travel">
             관광 안내
           </div>
-
           <div class="guide-sub">
             TRAVEL GUIDE
           </div>
-
         </div>
-
       </button>
-
 
     </div>
 
   </section>
 
 
-
-  <!-- STAY INFORMATION -->
+  <!-- STAY INFO -->
 
   <section class="stay">
 
@@ -986,43 +673,31 @@
       STAY INFORMATION
     </div>
 
-
     <div class="times">
 
-
       <div class="time-box">
-
         <div class="time-name">
           CHECK-IN
         </div>
-
         <div class="time-value">
           15:00
         </div>
-
       </div>
-
 
       <div class="time-divider"></div>
 
-
       <div class="time-box">
-
         <div class="time-name">
           CHECK-OUT
         </div>
-
         <div class="time-value">
           11:00
         </div>
-
       </div>
-
 
     </div>
 
   </section>
-
 
 
   <!-- INSTAGRAM -->
@@ -1033,22 +708,18 @@
       FOLLOW HAEUN-ISM
     </div>
 
-    <div class="insta-icon">
-      ♡
+    <div class="instagram-logo">
+      <div class="instagram-camera"></div>
     </div>
 
     <div class="insta-handle">
       @haeun__ism
     </div>
 
-    <p
-      class="insta-text"
-      id="instaText"
-    >
+    <p class="insta-text" id="instaText">
       해운이즘의 새로운 소식과<br>
       공간 이야기를 만나보세요.
     </p>
-
 
     <a
       href="https://www.instagram.com/haeun__ism/"
@@ -1061,7 +732,6 @@
     </a>
 
   </section>
-
 
 
   <!-- FOOTER -->
@@ -1078,9 +748,7 @@
 
   </footer>
 
-
 </main>
-
 
 
 <script>
@@ -1088,178 +756,78 @@
   const translations = {
 
     ko: {
-
-      welcomeTitle:
-        "Welcome to HAEUN-ISM",
-
+      welcomeTitle: "Welcome to HAEUN-ISM",
       welcomeText:
         "해운이즘을 찾아주셔서 감사합니다.<br>편안한 숙박을 위해 필요한 정보를 아래에서 확인해 주세요.",
-
-      guideHeading:
-        "이용 안내",
-
-      rules:
-        "숙박 주의사항",
-
-      wifi:
-        "Wi-Fi",
-
-      parking:
-        "주차 안내",
-
-      coffee:
-        "커피머신",
-
-      laundry:
-        "세탁기 사용",
-
-      waste:
-        "쓰레기 & 분리수거",
-
-      luggage:
-        "짐 보관",
-
-      travel:
-        "관광 안내",
-
+      guideHeading: "이용 안내",
+      rules: "숙박 주의사항",
+      wifi: "Wi-Fi",
+      parking: "주차 안내",
+      coffee: "커피머신",
+      laundry: "세탁기 사용",
+      waste: "쓰레기 & 분리수거",
+      luggage: "짐 보관",
+      travel: "관광 안내",
       instaText:
         "해운이즘의 새로운 소식과<br>공간 이야기를 만나보세요.",
-
-      instaButton:
-        "Instagram에서 보기 ↗"
+      instaButton: "Instagram에서 보기 ↗"
     },
-
 
     en: {
-
-      welcomeTitle:
-        "Welcome to HAEUN-ISM",
-
+      welcomeTitle: "Welcome to HAEUN-ISM",
       welcomeText:
         "Thank you for choosing HAEUN-ISM.<br>Find everything you need for a comfortable stay below.",
-
-      guideHeading:
-        "Guest Information",
-
-      rules:
-        "House Rules",
-
-      wifi:
-        "Wi-Fi",
-
-      parking:
-        "Parking",
-
-      coffee:
-        "Coffee Machine",
-
-      laundry:
-        "Washing Machine",
-
-      waste:
-        "Waste & Recycling",
-
-      luggage:
-        "Luggage Storage",
-
-      travel:
-        "Travel Guide",
-
+      guideHeading: "Guest Information",
+      rules: "House Rules",
+      wifi: "Wi-Fi",
+      parking: "Parking",
+      coffee: "Coffee Machine",
+      laundry: "Washing Machine",
+      waste: "Waste & Recycling",
+      luggage: "Luggage Storage",
+      travel: "Travel Guide",
       instaText:
         "Discover more moments and<br>stories from HAEUN-ISM.",
-
-      instaButton:
-        "View Instagram ↗"
+      instaButton: "View Instagram ↗"
     },
-
 
     zh: {
-
-      welcomeTitle:
-        "欢迎来到 HAEUN-ISM",
-
+      welcomeTitle: "欢迎来到 HAEUN-ISM",
       welcomeText:
         "感谢您选择 HAEUN-ISM。<br>请在下方查看舒适入住期间所需的相关信息。",
-
-      guideHeading:
-        "入住指南",
-
-      rules:
-        "住宿须知",
-
-      wifi:
-        "Wi-Fi",
-
-      parking:
-        "停车指南",
-
-      coffee:
-        "咖啡机",
-
-      laundry:
-        "洗衣机",
-
-      waste:
-        "垃圾分类",
-
-      luggage:
-        "行李寄存",
-
-      travel:
-        "旅游指南",
-
+      guideHeading: "入住指南",
+      rules: "住宿须知",
+      wifi: "Wi-Fi",
+      parking: "停车指南",
+      coffee: "咖啡机",
+      laundry: "洗衣机",
+      waste: "垃圾分类",
+      luggage: "行李寄存",
+      travel: "旅游指南",
       instaText:
         "关注 HAEUN-ISM，<br>发现更多空间与旅行故事。",
-
-      instaButton:
-        "查看 Instagram ↗"
+      instaButton: "查看 Instagram ↗"
     },
 
-
     ja: {
-
-      welcomeTitle:
-        "HAEUN-ISMへようこそ",
-
+      welcomeTitle: "HAEUN-ISMへようこそ",
       welcomeText:
         "HAEUN-ISMをお選びいただきありがとうございます。<br>快適にお過ごしいただくための情報をご確認ください。",
-
-      guideHeading:
-        "ご利用案内",
-
-      rules:
-        "宿泊時の注意事項",
-
-      wifi:
-        "Wi-Fi",
-
-      parking:
-        "駐車場案内",
-
-      coffee:
-        "コーヒーマシン",
-
-      laundry:
-        "洗濯機",
-
-      waste:
-        "ゴミ・分別",
-
-      luggage:
-        "荷物預かり",
-
-      travel:
-        "観光案内",
-
+      guideHeading: "ご利用案内",
+      rules: "宿泊時の注意事項",
+      wifi: "Wi-Fi",
+      parking: "駐車場案内",
+      coffee: "コーヒーマシン",
+      laundry: "洗濯機",
+      waste: "ゴミ・分別",
+      luggage: "荷物預かり",
+      travel: "観光案内",
       instaText:
         "HAEUN-ISMの最新情報や<br>空間のストーリーをご覧ください。",
-
-      instaButton:
-        "Instagramを見る ↗"
+      instaButton: "Instagramを見る ↗"
     }
 
   };
-
 
 
   const buttons =
@@ -1268,41 +836,23 @@
 
   function changeLanguage(lang) {
 
-    const t =
-      translations[lang];
+    const t = translations[lang];
 
+    document.documentElement.lang = lang;
 
-    document.documentElement.lang =
-      lang;
-
-
-    document.getElementById(
-      "welcomeTitle"
-    ).innerHTML =
+    document.getElementById("welcomeTitle").innerHTML =
       t.welcomeTitle;
 
-
-    document.getElementById(
-      "welcomeText"
-    ).innerHTML =
+    document.getElementById("welcomeText").innerHTML =
       t.welcomeText;
 
-
-    document.getElementById(
-      "guideHeading"
-    ).textContent =
+    document.getElementById("guideHeading").textContent =
       t.guideHeading;
 
-
-    document.getElementById(
-      "instaText"
-    ).innerHTML =
+    document.getElementById("instaText").innerHTML =
       t.instaText;
 
-
-    document.getElementById(
-      "instaButton"
-    ).textContent =
+    document.getElementById("instaButton").textContent =
       t.instaButton;
 
 
@@ -1310,11 +860,9 @@
       .querySelectorAll("[data-key]")
       .forEach(item => {
 
-        const key =
-          item.dataset.key;
+        const key = item.dataset.key;
 
-        item.textContent =
-          t[key];
+        item.textContent = t[key];
 
       });
 
@@ -1337,7 +885,6 @@
   }
 
 
-
   buttons.forEach(button => {
 
     button.addEventListener(
@@ -1352,7 +899,6 @@
     );
 
   });
-
 
 
   const savedLanguage =
@@ -1373,7 +919,6 @@
   }
 
 </script>
-
 
 </body>
 </html>
