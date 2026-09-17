@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f1ea">
+
+  <title>HAEUN-ISM | Guest Guide</title>
+
+  <style>
+    /* =========================
+       BASIC
+    ========================== */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(
+          circle at top,
+          #ffffff 0%,
+          #faf8f4 38%,
+          #f3eee7 100%
+        );
+
+      color: #34271f;
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans KR",
+        "Noto Sans JP",
+        "Noto Sans SC",
+        Arial,
+        sans-serif;
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+
+    /* =========================
+       PAGE
+    ========================== */
+
+    .page {
+      width: 100%;
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 54px 24px 38px;
+    }
+
+
+    /* =========================
+       BRAND
+    ========================== */
+
+    .brand {
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    .logo {
+      display: block;
+      width: 190px;
+      max-width: 58%;
+      height: auto;
+      margin: 0 auto 24px;
+    }
+
+    .eyebrow {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 10px;
+      letter-spacing: 5px;
+      color: #9a887b;
+      margin-bottom: 10px;
+    }
+
+    .guide-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: #38271e;
+    }
+
+    .line {
+      width: 34px;
+      height: 1px;
+      background: #8f7666;
+      margin: 20px auto 0;
+    }
+
+
+    /* =========================
+       WELCOME
+    ========================== */
+
+    .welcome {
+      text-align: center;
+      margin-bottom: 37px;
+    }
+
+    .welcome-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      margin-bottom: 15px;
+    }
+
+    .welcome-sub {
+      font-size: 12px;
+      line-height: 1.8;
+      color: #8c7c71;
+    }
+
+
+    /* =========================
+       LANGUAGE INFORMATION
+    ========================== */
+
+    .intro-card {
+      background: rgba(255, 255, 255, 0.66);
+      border: 1px solid rgba(106, 84, 70, 0.14);
+      border-radius: 22px;
+
+      padding: 8px 25px;
+
+      box-shadow:
+        0 18px 45px rgba(71, 52, 40, 0.045);
+
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+
+      margin-bottom: 36px;
+    }
+
+    .intro-row {
+      padding: 21px 0;
+      border-bottom: 1px solid rgba(106, 84, 70, 0.10);
+    }
+
+    .intro-row:last-child {
+      border-bottom: none;
+    }
+
+    .intro-language {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+
+      margin-bottom: 7px;
+
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+
+      color: #9b887b;
+    }
+
+    .intro-text {
+      font-size: 13px;
+      line-height: 1.75;
+      color: #4c3e35;
+      word-break: keep-all;
+    }
+
+
+    /* =========================
+       LANGUAGE SELECT
+    ========================== */
+
+    .select {
+      margin-top: 5px;
+    }
+
+    .select-label {
+      text-align: center;
+
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 10px;
+      letter-spacing: 3.5px;
+
+      color: #9b897c;
+
+      margin-bottom: 17px;
+    }
+
+    .language-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 11px;
+    }
+
+    .language-button {
+      position: relative;
+
+      min-height: 86px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      text-decoration: none;
+
+      background: rgba(255, 255, 255, 0.76);
+
+      border: 1px solid rgba(89, 66, 52, 0.16);
+      border-radius: 16px;
+
+      color: #382b23;
+
+      transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .language-button:hover {
+      transform: translateY(-3px);
+
+      background: #3c2b22;
+      border-color: #3c2b22;
+
+      color: #ffffff;
+
+      box-shadow:
+        0 12px 25px rgba(62, 43, 32, 0.12);
+    }
+
+    .language-main {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .language-small {
+      font-size: 9px;
+      letter-spacing: 1.6px;
+      opacity: 0.55;
+    }
+
+    .arrow {
+      position: absolute;
+      right: 13px;
+      bottom: 10px;
+
+      font-size: 12px;
+      opacity: 0.32;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      text-align: center;
+      margin-top: 47px;
+      padding-bottom: 10px;
+    }
+
+    .footer-brand {
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: 10px;
+      letter-spacing: 3px;
+
+      color: #806e62;
+
+      margin-bottom: 8px;
+    }
+
+    .footer-location {
+      font-size: 9px;
+      letter-spacing: 1.8px;
+      color: #b2a59c;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 480px) {
+
+      .page {
+        padding:
+          38px
+          18px
+          32px;
+      }
+
+      .brand {
+        margin-bottom: 32px;
+      }
+
+      .logo {
+        width: 175px;
+        max-width: 58%;
+        margin-bottom: 21px;
+      }
+
+      .guide-title {
+        font-size: 21px;
+      }
+
+      .intro-card {
+        padding: 6px 20px;
+        border-radius: 19px;
+      }
+
+      .intro-row {
+        padding: 18px 0;
+      }
+
+      .intro-text {
+        font-size: 12.5px;
+      }
+
+      .language-button {
+        min-height: 82px;
+      }
+
+    }
+
+
+    /* VERY SMALL MOBILE */
+
+    @media (max-width: 340px) {
+
+      .language-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <main class="page">
+
+
+    <!-- =====================
+         LOGO
+    ====================== -->
+
+    <header class="brand">
+
+      <img
+        src="haeunism-logo.png"
+        alt="HAEUN-ISM"
+        class="logo"
+      >
+
+      <div class="eyebrow">
+        HAEUNDAE · BUSAN
+      </div>
+
+      <h1 class="guide-title">
+        Guest Guide
+      </h1>
+
+      <div class="line"></div>
+
+    </header>
+
+
+
+    <!-- =====================
+         WELCOME
+    ====================== -->
+
+    <section class="welcome">
+
+      <div class="welcome-title">
+        Welcome to HAEUN-ISM
+      </div>
+
+      <div class="welcome-sub">
+        A little guide for a comfortable stay.<br>
+        Please select your language below.
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================
+         4 LANGUAGE MESSAGE
+    ====================== -->
+
+    <section class="intro-card">
+
+
+      <!-- KOREAN -->
+
+      <div class="intro-row">
+
+        <div class="intro-language">
+          🇰🇷 &nbsp;한국어
+        </div>
+
+        <div class="intro-text">
+          해운이즘을 찾아주셔서 감사합니다.<br>
+          편안한 숙박을 위한 안내 페이지입니다.<br>
+          아래에서 언어를 선택해 주세요.
+        </div>
+
+      </div>
+
+
+
+      <!-- ENGLISH -->
+
+      <div class="intro-row">
+
+        <div class="intro-language">
+          🇺🇸 &nbsp;English
+        </div>
+
+        <div class="intro-text">
+          Thank you for choosing HAEUN-ISM.<br>
+          This guide contains helpful information
+          for a comfortable stay.<br>
+          Please select your language below.
+        </div>
+
+      </div>
+
+
+
+      <!-- CHINESE -->
+
+      <div class="intro-row">
+
+        <div class="intro-language">
+          🇨🇳 &nbsp;中文
+        </div>
+
+        <div class="intro-text">
+          感谢您选择 HAEUN-ISM。<br>
+          本页面提供舒适入住期间所需的相关指南。<br>
+          请在下方选择您的语言。
+        </div>
+
+      </div>
+
+
+
+      <!-- JAPANESE -->
+
+      <div class="intro-row">
+
+        <div class="intro-language">
+          🇯🇵 &nbsp;日本語
+        </div>
+
+        <div class="intro-text">
+          HAEUN-ISMをお選びいただき、
+          ありがとうございます。<br>
+          快適にお過ごしいただくための
+          ご案内ページです。<br>
+          下記から言語を選択してください。
+        </div>
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =====================
+         LANGUAGE BUTTONS
+    ====================== -->
+
+    <section class="select">
+
+      <div class="select-label">
+        SELECT YOUR LANGUAGE
+      </div>
+
+
+      <div class="language-grid">
+
+
+        <!-- Korean -->
+
+        <a
+          href="ko.html"
+          class="language-button"
+        >
+
+          <div class="language-main">
+            한국어
+          </div>
+
+          <div class="language-small">
+            KOREAN
+          </div>
+
+          <span class="arrow">
+            →
+          </span>
+
+        </a>
+
+
+
+        <!-- English -->
+
+        <a
+          href="en.html"
+          class="language-button"
+        >
+
+          <div class="language-main">
+            English
+          </div>
+
+          <div class="language-small">
+            ENGLISH
+          </div>
+
+          <span class="arrow">
+            →
+          </span>
+
+        </a>
+
+
+
+        <!-- Chinese -->
+
+        <a
+          href="zh.html"
+          class="language-button"
+        >
+
+          <div class="language-main">
+            中文
+          </div>
+
+          <div class="language-small">
+            CHINESE
+          </div>
+
+          <span class="arrow">
+            →
+          </span>
+
+        </a>
+
+
+
+        <!-- Japanese -->
+
+        <a
+          href="ja.html"
+          class="language-button"
+        >
+
+          <div class="language-main">
+            日本語
+          </div>
+
+          <div class="language-small">
+            JAPANESE
+          </div>
+
+          <span class="arrow">
+            →
+          </span>
+
+        </a>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================
+         FOOTER
+    ====================== -->
+
+    <footer>
+
+      <div class="footer-brand">
+        HAEUN-ISM
+      </div>
+
+      <div class="footer-location">
+        HAEUNDAE · BUSAN · KOREA
+      </div>
+
+    </footer>
+
+
+  </main>
+
+</body>
+</html>
